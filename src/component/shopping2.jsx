@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import Shopping3 from "./Shopping3";
 
 
 const Shopping2 = () => {
@@ -12,8 +13,10 @@ const Shopping2 = () => {
         
     },[])
     return (
-        <div>
-            <h4>product:{product.length}</h4>
+        <div className='grid grid-cols-3 gap-6 '>
+          {
+            product.map(product =><Shopping3 key={product.id} product={product}></Shopping3> )
+          }
         </div>
     );
 };
