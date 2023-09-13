@@ -2,7 +2,7 @@
 
 const Shopping1 = () => {
     return (
-        <div className='p-6'>
+        <div className='p-4'>
             <div className="navbar bg-base-100">
   <div className="flex-1">
     <a className="btn btn-ghost normal-case text-xl">Shopping</a>
