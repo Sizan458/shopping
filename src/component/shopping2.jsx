@@ -17,12 +17,13 @@ const Shopping2 = ({handleCart}) => {
     return (
         <div className='grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3'>
           {
-            product.map(product =><Shopping3 key={product.id} product={product} handleCart={handleCart}></Shopping3> )
+            product.map(product =><Shopping3 key={product.id} product={product} handleCart={handleCart} ></Shopping3> )
           }
         </div>
     );
 };
 Shopping2.propTypes = {
-  handleCart: PropTypes.func
+  handleCart: PropTypes.func,
+  
 }
 export default Shopping2;

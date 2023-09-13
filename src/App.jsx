@@ -7,8 +7,9 @@ import Shopping2 from './component/shopping2'
 
 function App() {
  const [cart,setCart]= useState([])
- const handleCart=carts=>{
-  console.log(carts)
+ 
+ const handleCart=(carts,)=>{
+  
   const addItems=[...cart,carts]
   setCart(addItems)
 
@@ -18,7 +19,7 @@ function App() {
     <>
     <Shopping1></Shopping1>
     <div className=' gap-4 w-[95%] mx-auto md:flex '>
-    <Shopping2 handleCart={handleCart}></Shopping2>
+    <Shopping2 handleCart={handleCart} ></Shopping2>
     <Cart cart={cart}></Cart>
     </div>
     </>

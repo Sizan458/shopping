@@ -26,6 +26,7 @@ const Shopping3 = ({product,handleCart}) => {
 };
 Shopping3.propTypes={
   product:PropTypes.object,
-  handleCart:PropTypes.func
+  handleCart:PropTypes.func,
+  handlePrice:PropTypes.func
 }
 export default Shopping3;
